@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Recipe Page</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: hsl(30, 54%, 90%);
+      margin: 0;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      background-color: white;
+      height: 1595px;
+      width: 500px;
+      margin-top: 1000px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding-top: 75px;
+      padding-bottom: 50px;
+  
+    }
+
+    .para-container {
+      margin-bottom: 20px;
+    }
+
+    .para-container h3 {
+      margin: 0;
+      font-size: 1.5em;
+      margin-left: 30px;
+    }
+
+    .para-container p {
+      margin: 10px 0;
+      color: hsl(228, 15%, 35%);
+      line-height: 1.5;
+      margin-left: 30px;
+      font-size: 16px;
+    }
+
+    .para-container h5 {
+      color: hsl(14, 45%, 36%);
+      font-size: 1.1em;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    ul {
+      list-style-type: square;
+      color: hsl(228, 15%, 35%);
+    }
+
+    ul li {
+      margin-bottom: 5px;
+    }
+
+    ol {
+      list-style-type: decimal;
+      color: hsl(228, 15%, 35%);
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+
+    ol li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .li {
+      margin-left: 30px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+
+      h3 {
+        font-size: 1.3em;
+      }
+
+      
+
+      p, ul li, ol li {
+        font-size: 0.9em;
+      }
+    }
+
+    img {
+      margin-left: 30px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    
+    }
+
+    .purple {
+      background-color: hsl(330, 100%, 98%);
+      margin-left: 30px;
+      margin-right: 30px;
+    
+    }
+
+    .h5 {
+      margin-left: 30px;
+      color: hsl(14, 45%, 36%);
+    }
+
+    .p {
+      margin-left: 30px;
+    }
+
+    p {
+      margin-left: 30px;
+    }
+
+    .p1 {
+      text-align: right;
+      margin-right: 30px;
+    }
+
+    .h3 {
+      margin-left: 30px;
+      color: hsl(14, 45%, 36%);
+    }
+
+    h3 {
+      margin-left: 30px;
+      color: hsl(14, 45%, 36%);
+    }
+
+    ol {
+  color: black; /* Default color for list items */
+}
+
+    ol::marker {
+  color: hsl(14, 45%, 36%);; /* Changes the color of the numbers */
+}
+
+.table-container {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures borders are collapsed into a single line */
+}
+
+td {
+  border-bottom: 1px solid #ccc; /* Adds a horizontal line between rows */
+  padding: 15px;
+  text-align: left; /* Aligns text to the left */
+  vertical-align: middle;
+  padding-left: 30px; /* Centers content vertically */
+}
+
+.td {
+  color: hsl(14, 45%, 36%);
+  padding-left: 30px; /* Controls spacing inside td element */
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="para-container">
+      <img src="assets\images\image-omelette.jpeg" alt="" height="200">
+      <h3>Simple Omelette Recipe</h3>
+      <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+        to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+      <div>
+    </div>
+    <div class="purple">
+      <h5>Preparation time</h5>
+      <ul class="ul">
+        <li class="li">Total: Approximately 10 minutes</li>
+        <li class="li">Preparation: 5 minutes</li>
+        <li class="li">Cooking: 5 minutes</li>
+      </ul></div>
+        </div>
+    <div>
+      <h3 class="h3">Ingredients</h3>
+    </div>
+    <ul>
+      <li class="li">2-3 large eggs</li>
+      <li class="li">Salt, to taste</li>
+      <li class="li">Pepper, to taste</li>
+      <li class="li">1 tablespoon of butter or oil</li>
+      <li class="li">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+    </ul>
+    <div>
+      <h3 class="h5">Instructions</h3>
+    </div>
+    <ol class="ol">
+      <li>Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
+      <li>Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.</li>
+      <li>Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
+      <li>Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
+      <li>Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
+      <li>Enjoy: Serve hot, with additional salt and pepper if needed.</li>
+    </ol>
+    <div>
+      <div>
+        <h3>Nutrition</h3>
+        <p>The table below shows nutritional values per serving without the additional fillings.</p>
+        <div class="table-container">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Calories</td>
+                  <td class="td"><strong>277kcal</strong></td>
+                </tr>
+                <tr>
+                  <td>Total Fat</td>
+                  <td class="td"><strong>20g</strong></td>
+                </tr>
+                <tr>
+                  <td>Saturated Fat</td>
+                  <td class="td"><strong>22g</strong></td>
+                </tr>
+                <tr>
+                  <td>Cholesterol</td>
+                  <td class="td"><strong>0g</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+  </body>
+  </html>
